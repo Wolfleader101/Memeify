@@ -19,5 +19,3 @@ for (let i = 0; i < memeNames.length; i++) {
 for (img in document.getElementsByTagName('img')) {
     img.src = memeImgs[Math.floor(Math.random() * memeImgs.length)].src;
 }
-
-alert();
