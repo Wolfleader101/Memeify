@@ -1,2 +1,2 @@
 # Memeify
-Chrome Extension Memeify's code!
+Chrome Extension Memeify's Websites!

@@ -20,4 +20,4 @@ for (img in document.getElementsByTagName('img')) {
     img.src = memeImgs[Math.floor(Math.random() * memeImgs.length)].src;
 }
 
-alert("meme");
+alert();
