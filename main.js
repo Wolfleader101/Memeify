@@ -16,6 +16,9 @@ for (let i = 0; i < memeNames.length; i++) {
     memeImgs[i].src = 'Memes/' + memeNames[i];
 };
 
-for (img in document.getElementsByTagName('img')) {
+for ( let img in document.getElementsByTagName('img')) {
     img.src = memeImgs[Math.floor(Math.random() * memeImgs.length)].src;
 }
+
+console.log(document.getElementsByTagName('img'));
+console.log(memeImgs);
