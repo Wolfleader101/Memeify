@@ -1,7 +1,7 @@
 chrome.app.runtime.onLaunched.addListener(function() {
   chrome.app.window.create('index.html', {
     'outerBounds': {
-      'width': 400,
+      'width': 500,
       'height': 500
     }
   });
@@ -13,7 +13,7 @@ const memeImgs = [];
 
 for (let i = 0; i < memeNames.length; i++) {
     memeImgs[i] = new Image();
-    memeImgs[i].src = 'Memes/' + memeNames[i];
+    memeImgs[i].src = chrome.runtime.getURL('Memes/' + memeNames[i]);
 };
 
 for ( let img in document.getElementsByTagName('img')) {
