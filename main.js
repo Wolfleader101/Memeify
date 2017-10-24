@@ -22,3 +22,4 @@ for ( let img of document.getElementsByTagName('img')) {
 
 console.log(document.getElementsByTagName('img'));
 console.log(memeImgs);
+//window.onload = function() {}
