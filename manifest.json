@@ -2,14 +2,21 @@
   "manifest_version": 2,
   "name": "Memeify",
   "description": "This is a chrome app/extension that turns all images on webpages into memes!",
-  "version": "0.4",
-  "icons": {
-    "16": "icon-16.png",
-    "128": "icon-128.png"
+  "version": "2",
+  "permissions": ["declarativeContent", "storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
   },
-  "app": {
-    "background": {
-      "scripts": ["main.js"]
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "128": "images/icon-128.png"
     }
+  },
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
   }
 }
