@@ -1,4 +1,3 @@
-setTimeout( () => {
   const memeNames = ['meme1.jpg', 'meme2.png'];
   const memeImgs = {};
 
@@ -19,5 +18,3 @@ setTimeout( () => {
   console.log(document.getElementsByTagName('img'));
   console.log(memeImgs);
   //window.onload = function() {}
-  
-}, 3000)
